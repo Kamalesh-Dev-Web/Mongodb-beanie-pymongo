@@ -17,7 +17,7 @@ class posts(Document):
     
 async def example():
     # Beanie uses Motor async client under the hood 
-    client = AsyncIOMotorClient("mongodb+srv://kamalesh-mongo:5DMJb9SVwxps38mE@cluster0.h5lf0.mongodb.net/?retryWrites=true&w=majority")
+    client = AsyncIOMotorClient("mongodb+srv://kamalesh-mongo:5b9SVwxps38mE@cluster0.h5lf0.mongodb.net/?retryWrites=true&w=majority")
 
     # Initialize beanie with the Product document class
     await init_beanie(database=client.blogs, document_models=[posts])
